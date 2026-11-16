@@ -1,28 +1,37 @@
 # Software Engineering Lab Repository
 
-**Student Name:** Aditya Raj  
-**SRN:** PES2UG24CS033  
-**Department:** Computer Science & Engineering  
-**University:** PES University  
-**GitHub:** [@hagemaruwu](https://github.com/hagemaruwu)
+Name: Aditya Raj  
+SRN: PES2UG24CS033  
+Section: 5A  
+PES University
 
----
+## Weekly lab work
 
-## Laboratory Work Index
-
-| Lab | Title / Topic | Folder |
+| Week | Topic | Files |
 |---|---|---|
-| **Lab 1** | Requirements & UML Modeling | [`Lab-1/`](./Lab-1) |
-| **Lab 2** | Software Architecture & Specifications | [`Lab-2/`](./Lab-2) |
-| **Lab 4** | VibeCoding: Donkey Kong Repair Lab | [`Lab-4/`](./Lab-4) |
+| 1 | Requirements and UML Modeling | [Lab-1](./Lab-1/) |
+| 2 | Agile Backlog Creation and Sprint Simulation in Jira | [Lab-2](./Lab-2/) |
+| 3 | Software Architecture: Airport Lost Luggage Claim and Tracking Portal | [Lab-3](./Lab-3/) |
+| 4 | VibeCoding: Donkey Kong Repair Lab | [Lab-4](./Lab-4/) |
+| 5 | Static Code Analysis: Electricity Bill | [Lab-5](./Lab-5/) |
+| 6 | Code and Branch Coverage: Spam Scoring | [Lab-6](./Lab-6/) |
+| 7 | Fuzzing for Input Validation Bugs: Vending Machine | [Lab-7](./Lab-7/) |
 
----
+Each folder contains the report, source code or other deliverables for that lab.
 
-## Lab 4: VibeCoding Deliverables Overview
+## Lab 7
 
-Inside [`Lab-4/`](./Lab-4):
-- **`before.mov`**: 10-second gameplay recording showing the deliberate ladder-descent bug in the unmodified game.
-- **`after.mov`**: 10-second gameplay recording showing the bug fixed (~30% descent rate), dynamic warm background transition, floating jump labels, and late-game multiplier.
-- **`game.py`**: Fully patched and extended Pygame codebase.
-- **`chat_history.pdf`**: Complete exported AI prompt conversation showing all 4 iterative prompt cycles and test results.
-- **`README.md`**: Detailed technical report covering root causes, implementations, and verification.
+- [Report with before/after screenshots](./Lab-7/Aditya_Raj_PES2UG24CS033_5A_Lab7_Report.pdf)
+- [Fixed application](./Lab-7/vending_machine.py)
+- [Hypothesis tests](./Lab-7/test_vending_machine.py)
+
+The assigned application uses `vending_machine.py` and `test_vending_machine.py` rather than the generic `processor.py` names in the handout.
+
+To run Lab 7:
+
+```sh
+cd Lab-7
+python -m pip install -r requirements.txt
+python vending_machine.py
+python -m pytest test_vending_machine.py -q
+```
